@@ -2,16 +2,21 @@ html {
     font-family: arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 #logo {
     display: block;
     margin: auto;
-    margin-top: 100px;
     width: 20em;
 }
 
 form {
     text-align: center;
     width: 30em;
+    min-height: 10em;
+    max-height: auto;
     margin: auto;
 }
 
@@ -21,9 +26,10 @@ form {
 
 #topbar {
     display: flex;
-    float: right;
-    height: 3em;
+    min-height: 30px;
+    width: 100%;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .toppic {
@@ -47,4 +53,25 @@ ul a {
     text-decoration: none;
     font-size: 14px;
     color: #222;
+}
+
+footer {
+    height: 46px;
+    background-color: lightgray;
+    justify-content: flex-end;
+}
+
+#overfoot {
+    height: 46px;
+    background-color: lightgray;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#underfoot {
+    height: 46px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
