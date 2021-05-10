@@ -1,7 +1,12 @@
-html {
+body {
+    font-size: 14px;
     font-family: arial, sans-serif;
+    color: #222;
 }
-.topbar {
+#logo {
+    margin: auto;
+}
+#topbar {
     float: right;
     width: 200px;
     display: grid;
@@ -9,8 +14,8 @@ html {
     align-items: center;
 }
 .topitems {
-    text-decoration: none;
     color: rgba(0,0,0,0.87);
+    text-decoration: none;
 }
 .search {
     width: 300px;
@@ -19,7 +24,6 @@ html {
 .googicons {
     opacity: 0.6;
 }
-#logo {
-    display: block;
-    transform: scale(0.5);
+.nounderline {
+    text-decoration: none;
 }
