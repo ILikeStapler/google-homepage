@@ -6,21 +6,21 @@
     </head>
 
     <body>
-        <div id="topbar">
-            <a href="http://mail.google.com">Gmail</a>
-            <a href="http://images.google.com">Images</a>
-            <a href="" id="nav"><img src="navbutton.png"></a>
-            <a href="" id="profilepic"><img src="profilepic.png"></a>
+        <div class="topbar" style="text-decoration: none;">
+            <a href="http://mail.google.com" class="topitems">Gmail</a>
+            <a href="http://images.google.com" class="topitems">Images</a>
+            <a href="" id="apps" class="googicons"><img src="appsbutton.png"></a>
+            <a href="" id="profilepic" class="googicons"><img src="profilepic.png"></a>
         </div>
         <br>
 
-        <div id="search">
-            <img src="google-logo.png">
+        <div class="search">
+            <img id="logo" src="google-logo.png">
             <form>
-                <img id="magnifier" src="magnifier.png">
+                <img id="magnifier" class="googicons" src="magnifier.png">
                 <input id="searchbar" type="text" autocomplete="off" placeholder="There shouldn't really be a placeholder here tbh"></input>
                 <br>
-                <div id="searchbuttons">
+                <div class="searchbuttons">
                     <input type="submit" value="Google Search"></input>
                     <input type="button" value="I'm Feeling Lucky">
                 </div>
@@ -30,7 +30,7 @@
             </form>
         </div>
         <footer>
-            <div>Sweden</div>
+            <div>Your Country</div>
             <div>
                 <div id="footlink1">
                     <a href="">About</a>

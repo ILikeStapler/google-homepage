@@ -1,7 +1,25 @@
-#topbar {
-    float: right;
+html {
+    font-family: arial, sans-serif;
 }
-#search {
-    width: 100%;
-    align-content: center;
+.topbar {
+    float: right;
+    width: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+}
+.topitems {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+.search {
+    width: 300px;
+    margin: 230px auto;
+}
+.googicons {
+    opacity: 0.6;
+}
+#logo {
+    display: block;
+    transform: scale(0.5);
 }
