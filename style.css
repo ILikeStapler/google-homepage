@@ -1,11 +1,22 @@
+html {
+    font-family: arial, sans-serif;
+}
 #logo {
     display: block;
     margin: auto;
+    margin-top: 200px;
+    width: 20em;
 }
 
 
 form {
     text-align: center;
+    width: 30em;
+    margin: auto;
+}
+
+#searchbar {
+    width: 30em;
 }
 
 ul {
