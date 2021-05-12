@@ -32,6 +32,10 @@ form {
     justify-content: flex-end;
 }
 
+#topbar {
+    margin-right: 15px;
+}
+
 .toppic {
     width: 2em;
     margin-top: 5px;
@@ -39,14 +43,11 @@ form {
 }
 ul {
     list-style-type: none;
-    margin-top: 10px;
-    margin-right: 10px;
     padding: 0;
 }
 
 li {
     display: inline;
-    margin-left: 10px;
 }
 
 ul a {
@@ -56,22 +57,50 @@ ul a {
 }
 
 footer {
-    height: 46px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 92px;
     background-color: lightgray;
-    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #overfoot {
     height: 46px;
+    width: 100vw;
     background-color: lightgray;
     border-bottom-color: gray;
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
 
+#overfoot p {
+    margin: 15px;
+}
+
 #underfoot {
+    width: 100vw;
     height: 46px;
     background-color: lightgray;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+}
+
+#underfoot1 {
+    width: 50vw;
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+
+#underfoot2 {
+    width: 50vw;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#underfoot2 a, #underfoot1 a {
+    margin: 15px;
 }
