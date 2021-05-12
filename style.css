@@ -1,46 +1,18 @@
+/* General rules*/
+
 html {
     font-family: arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 400px;
 }
 
 a {
     text-decoration: none;
 }
 
-#logo {
-    display: block;
-    margin: auto;
-    width: 20em;
-}
-
-form {
-    text-align: center;
-    width: 30em;
-    min-height: 10em;
-    max-height: auto;
-    margin: auto;
-}
-
-#searchbar {
-    width: 30em;
-}
-
-#topbar {
-    display: flex;
-    min-height: 30px;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#topbar {
-    margin-right: 15px;
-}
-
-.toppic {
-    width: 2em;
-    margin-top: 5px;
-    opacity: 0.7;
-}
 ul {
     list-style-type: none;
     padding: 0;
@@ -56,10 +28,84 @@ ul a {
     color: #222;
 }
 
+/* Top navbar */
+
+#topbar {
+    display: flex;
+    height: 48px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#topbar a {
+    color: rgba(0,0,0,0.87);
+    padding-right: 15px;
+    font-size: 13px;
+}
+
+.toppic {
+    width: 2em;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+
+/* Google logo */
+
+
+.logocontainer {
+    display: flex;
+    min-height: 100px;
+    max-height: 1fr;
+    width: 100%;
+    align-items: flex-end;
+}
+#logo {
+    margin: auto;
+    width: 20em;
+}
+
+/* Search */
+
+form {
+    text-align: center;
+    width: 100%;
+    min-height: 10em;
+    margin: auto;
+}
+
+#magnifier {
+    position: absolute;
+    align-self: flex-start;
+    opacity: 0.4;
+}
+
+#searchbar {
+    width: 50em;
+    height: 3.5em;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(223,225,229);
+    border-width: 1px;
+}
+
+#searchbar:hover {
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.bottomcontainer {
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+/* Footer stuff*/
+
 footer {
     position: absolute;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: 92px;
     background-color: lightgray;
     display: flex;
@@ -68,21 +114,24 @@ footer {
 
 #overfoot {
     height: 46px;
-    width: 100vw;
-    background-color: lightgray;
-    border-bottom-color: gray;
+    width: 100%;
+    background-color: rgb(242,242,242);
+    border-bottom-color: rgb(218,220,224);
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
 
 #overfoot p {
     margin: 15px;
+    color: #70757a;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
 #underfoot {
-    width: 100vw;
+    width: 100%;
     height: 46px;
-    background-color: lightgray;
+    background-color: rgb(242,242,242);
     display: flex;
 }
 
@@ -91,6 +140,7 @@ footer {
     height: 46px;
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 #underfoot2 {
@@ -99,8 +149,11 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    margin-right: 10px;
 }
 
 #underfoot2 a, #underfoot1 a {
     margin: 15px;
+    color: #70757a;
+    font-size: 14px;
 }
