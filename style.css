@@ -83,6 +83,7 @@ form {
 
 #searchcontainer {
     display: flex;
+    max-width: 100%;
 }
 
 #magnifier {
@@ -93,6 +94,9 @@ form {
 }
 
 #searchbar {
+    display: flex;
+    margin: auto;
+    min-width: 1px;
     width: 52em;
     height: 3.5em;
     border-radius: 25px;
@@ -101,14 +105,26 @@ form {
     border-width: 1px;
 }
 
+#searchbuttons {
+    padding-top: 20px;
+}
+
+.button {
+    -webkit-appearance: none;
+    padding: 5px;
+}
 
 #searchbar:hover {
     box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 
 .bottomcontainer {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
     width: 100%;
-    text-align: center;
+    min-height: 100px;
+    max-height: 30vh;
     font-size: small;
 }
 
