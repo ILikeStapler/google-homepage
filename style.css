@@ -90,23 +90,27 @@ form {
     max-width: 100%;
 }
 
-#magnifier {
-    display: none;
-    position: absolute;
-    opacity: 0.4;
-    width: 24px;
-}
-
 #searchbar {
+    background-image: url("magnifier.png");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-y: center;
+    background-position-x: 10px;
     display: flex;
     margin: auto;
-    min-width: 1px;
-    width: 52em;
-    height: 3.5em;
+    padding-left: 25px;
+    padding-right: 10px;
+    width: 565px;
+    height: 44px;
     border-radius: 25px;
     border-style: solid;
     border-color: rgb(223,225,229);
     border-width: 1px;
+    font-size: 16px;
+}
+
+#searchbar:focus {
+    outline: none;
 }
 
 #searchbuttons {
@@ -183,7 +187,7 @@ footer {
 }
 
 #underfoot1 {
-    width: 50vw;
+    width: 49%;
     height: 46px;
     display: flex;
     align-items: center;
@@ -191,7 +195,7 @@ footer {
 }
 
 #underfoot2 {
-    width: 50vw;
+    width: 49%;
     height: 46px;
     display: flex;
     align-items: center;
